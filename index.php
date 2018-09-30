@@ -8,7 +8,7 @@ $app = new \Slim\App;
 $app->get('[/{params:.*}]', function (Request $request, Response $response, array $args) {
     $path = explode("/",$args['params']);
     
-    $dbh = new PDO("pgsql:dbname=ets_logistic;host=192.168.2.10", "postgres", "deytrin21"); 
+    $dbh = new PDO("pgsql:dbname=ets_logistic;host=192.168.2.10", "postgres", "pwd"); 
     
      //tree($dbh,$path);
    
